@@ -1,0 +1,419 @@
+/*************
+ * 页面样式
+ *************/
+
+/* ============
+   基本默认样式
+   ============ */
+html{
+	font-size:62.5%;
+	color:#3d4250;
+}
+body{
+	background:#fff;
+}
+::selection{
+	background-color:#b3d4fc;
+    text-shadow:none;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style:none;
+}
+@font-face {
+  font-family: 'Merriweather';   /*字体名称*/
+  src: url('../ttf/MerriweatherItalic.woff.ttf');       /*字体源文件*/
+}
+@font-face{
+	font-family:'Open Sans';
+	src:url('../ttf/opensans.ttf');
+}
+@font-face{
+	font-family:'Merriweather-Bold';
+	src:url('../ttf/Merriweather-Bold.ttf');
+}
+/* ==========
+   工具样式
+   ========== */
+
+.center-block{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.pull-right{
+    float:right!important;
+}
+
+.pull-left{
+    float:left!important;
+}
+
+.text-right{
+    text-align:right!important;
+}
+
+.text-left{
+    text-align:left!important;
+}
+
+.text-center{
+    text-align:center!important;
+}
+
+.hide{
+    display:none!important;
+}
+
+.show{
+    display:block!important;
+}
+
+.invisible{
+    visibility:hidden;
+}
+
+.text-hide{
+    font:0/0 a;
+    color:transparent;
+    text-shadow:none;
+    background-color:transparent;
+    border:0;
+}
+
+.clearfix:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+/* 兼容IE6,7 */
+.clearfix{
+    zoom:1;
+}
+
+/* ========
+   PC样式
+   ======== */
+
+/* header开始 */
+/* 第一部分 */
+.header-outer{
+	width:100%;
+	transition:.5s;
+}
+.header{
+	width:78%;
+	/* height:10rem; */
+	padding-top:6rem;
+	margin:0 auto;
+	transition:* .5s,padding 0s;
+}
+
+.main-logo{
+	width:8rem;
+}
+.head-nav{
+	float:right;
+	margin-top:1.5rem;
+}
+.head-nav-ul li{
+	float:left;
+	font-family: '微软雅黑', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    padding:1.5rem 2rem;
+    margin-left:1rem;
+    border:thin solid rgba(0,0,0,0);
+    border-radius:5rem;
+    cursor:pointer;
+    transition:.5s;
+}
+.head-nav-ul li:hover{
+	color:#0bc7fd;
+	border:thin solid #0bc7fd;
+	border-radius:5rem;
+}
+.head-nav-ul li:first-child{
+	display:none;
+}
+/* header结束 */
+/* 身体部分开始*/
+.bodyer{
+	margin-top:20px;
+}
+.bodyer-title{
+	font-family: "Merriweather-Bold";
+	font-weight: 900;
+	color: #3d4250;
+	font-size:5rem; 
+}
+.title-info{
+	width:50%;
+	font-size: 1.7rem;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:400;
+	color: #8c8d92;
+	line-height:2.2rem;
+}
+/* 第二部分 */
+.person-pic{
+	margin-top:100px;
+	width:78%;
+}
+.team-pic{
+	float:left;
+	width:33%;
+	box-sizing:border-box;
+	padding-left:1rem;
+	padding-right:1rem;
+}
+.team-pic img{
+	width:100%;
+	transition:.5s;
+}
+.pic-info{
+	margin-top:4rem;
+}
+.author-name{
+	font-family:"微软雅黑";
+	font-weight: 900;
+    font-size: 2.2rem;
+}
+.anuthor-info{
+	font-family: 'Merriweather', serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    color: #494c54;
+}
+.center-button{
+	background:#fff;
+	color:#0bc7fd;
+	border:.2rem solid #0bc7fd;
+	border-radius:3rem;
+	width:24rem;
+	height:6rem;
+	font-family: 'Merriweather', sans-serif;
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin-top:10rem;
+    margin-bottom:8rem;
+    cursor:pointer;
+    transition:.3s;
+}
+.center-button:hover{
+	border-radius:0;
+}
+/* 第三部分 */
+.other-link{
+	border-top:1px solid rgb(236, 236, 236);
+	background:#fcfdfd;
+}
+.sponsor-link{
+	margin:5rem auto 10rem auto;
+	width:70%;
+}
+.sponsor-link li{
+	float:left;
+	width:16%;
+}
+.sponsor-link li img{
+	width:100%;
+}
+.sponsor-info{
+	margin:0 auto;
+	width:78%;
+}
+.sponsor-title{
+	font-family:"Montserrat","微软雅黑";
+	font-size:3.5rem;
+	letter-spacing:.1rem;
+	font-weight:800;
+}
+.sponsor-text{
+	font-family:"Merriweather";
+	font-weight: 500;
+    font-size: 2rem;
+    color: #7f8891;
+    line-height: 3rem;
+}
+/* 身体部分结束*/
+/* footer开始 */
+.footer{
+	width:100%;
+	height:49rem;
+}
+.foot-left{
+	width:60%;
+	height:100%;
+	background: #0bc7fd;
+}
+.send-me{
+	font-family: "微软雅黑";
+	margin-top:13rem;
+	font-weight: 5	00;
+    font-size: 3rem;
+    color: #3d4250;
+    width:40%;
+}
+.foot-right{
+	width:40%;
+	height:100%;
+	background: #3d4250;
+}
+.send-input{
+	border:0;
+	width:28%;
+	background:rgba(0,0,0,0);
+	border-bottom:.1rem solid #3d4250;
+	padding-left:2rem;
+	padding-bottom:1rem;
+	font-size:1.5rem;
+	font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+.send-input:focus{
+	outline:none;
+}
+.sent-button{
+	font-family:"Merriweather";
+	font-weight: 900;
+	border:0;
+	margin-top:1rem;
+	width:35%;
+	height:6rem;
+	color:#fff;
+	background:#3d4250;
+	border-radius:3rem;
+	font-size:1.6rem;
+	cursor:pointer;
+	transition:.3s;
+}
+.sent-button:hover{
+	border-radius:0;
+}
+.footer-logo{
+	width:9rem;
+	margin-top:10rem
+}
+.foot-info{
+	display:block;
+	margin-top:1rem;
+	font-family:"Merriweather";
+	color:#fff;
+	font-size:1.5rem;
+}
+.qc{
+	color:#fff;
+	font-family:"Merriweather";
+	margin-top:10rem;
+	font-size:1.5rem;
+}
+/* foorer结束 */
+
+/* ========
+   平板样式
+   ======== */
+
+@media only screen and (max-width: 924px){
+	/* 头部分开始 */
+	.header{
+		width:100%;
+		padding-top:0;
+	}
+	.head-nav{
+		width:100%;
+		background: #fcfcfc;
+		border-bottom: solid thin #f0f0f0;
+		margin-top:0;
+	}
+	.head-nav-ul li{
+		display:none;
+	}
+	.head-nav-ul li:hover{
+		border:.1rem solid rgba(0,0,0,0);
+		color:#3d4250;
+	}
+	.head-nav-ul li:click{
+		border:1px solid rgba(0,0,0,0);
+		color:#3d4250;
+	}
+	.head-nav-ul li:first-child{
+		display:block;
+		text-align:center;
+		float:none;
+		margin:0;
+	}
+	.main-logo{
+		display:block;
+		width:8rem;
+		margin:0 auto;
+		padding:5rem 0;
+	}
+	/* 头部分结束 */
+	/* 身体部分开始 */
+	/* 第一部分 */
+	.title-info{
+		font-size:1.5rem;
+		line-height:2.8rem;
+		width:70%;
+	}
+	/* 第二部分 */
+	.team-pic{
+		width:100%;
+		float:none;
+		margin:0 auto;
+	}
+	.author-name{
+		font-size:3rem;
+		letter-spacing:.2rem;
+	}
+	.pic-info{
+		margin-top: 3rem;
+		margin-bottom:5rem;
+	}
+	.center-button{
+		margin-top:6rem;
+		margin-bottom:6rem;
+		width:90%;
+	}
+	/* 第三部分 */
+	.sponsor-link li{
+		width:33%;
+	}
+	/* 身体部分结束 */
+	/* 脚部分开始 */
+	.foot-left{
+		width:100%;
+	}
+	.send-me{
+		width:70%;
+	}
+	.send-input{
+		width:70%;
+	}
+	.sent-button{
+		width:70%;
+	}
+	.foot-right{
+		width:100%;
+	}
+	/* 脚部分结束 */
+}
+
+/* ========
+   手机样式
+   ======== */
+
+@media only screen and (max-width: 480px){
+	.sponsor-link li{
+		width:50%;
+	}
+}
